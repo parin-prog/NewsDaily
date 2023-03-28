@@ -1,0 +1,25 @@
+#card{
+    cursor: pointer;
+    border-radius: 1rem;
+    margin: 15px 5px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+#card:hover{
+    outline: 8px outset rgba(28, 77, 255, 0.723);
+    border-radius: 1rem;
+}
+
+#card>img{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.card-title{
+    font-size: medium;
+}
+
+.card-text{
+    font-size: small;   
+}
