@@ -17,9 +17,19 @@
 }
 
 .card-title{
-    font-size: medium;
+    font-size: 19px;
 }
 
 .card-text{
-    font-size: small;   
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-text2{
+    background-color: rgba(248, 246, 246, 0.803);
+    font-size: 13px;
+}
+
+#badge{
+    color: rgb(0, 0, 0);
 }

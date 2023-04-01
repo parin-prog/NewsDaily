@@ -34,20 +34,21 @@ export default class News extends Component {
     this.setState({articles: parsedData.articles, totalResults: parsedData.totalResults, loading: false});
   }
 
-  async handlePrev(){
-    this.setState({loading: true});
+   handlePrev = async()=>{
+    this.setState({loading: true, page: this.state.page - 1});
     console.log(this.state.page);
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=93bb2f28585942749cbbb8b22b89b493&pageSize=${this.props.pageSize}&page=${this.state.page-1}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=93bb2f28585942749cbbb8b22b89b493&pageSize=${this.props.pageSize}&page=${this.state.page}`;
     let data = await fetch(url);
     let parsedData = await data.json();
-    this.setState({articles: parsedData.articles, page: this.state.page - 1});
+    this.setState({articles: parsedData.articles, loading: false});
   }
 
-  async handleNext(){    
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=93bb2f28585942749cbbb8b22b89b493&pageSize=${this.props.pageSize}&page=${this.state.page+1}`;
+   handleNext = async()=>{
+    this.setState({loading: true, page: this.state.page + 1});
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=93bb2f28585942749cbbb8b22b89b493&pageSize=${this.props.pageSize}&page=${this.state.page}`;
     let data = await fetch(url);
     let parsedData = await data.json();
-    this.setState({articles: parsedData.articles, page: this.state.page + 1});
+    this.setState({articles: parsedData.articles, loading: false});
   }
 
   render() {
@@ -59,14 +60,15 @@ export default class News extends Component {
         <div className='row'>
         {this.state.articles.map((e)=>{
           return <div className='col-md-3' key={e.url}>
-            <NewsItem title={e.title?e.title.slice(0, 105):""} desc={e.description?e.description.slice(0, 108):''} imageUrl={e.urlToImage} newsUrl={e.url} />
+            {!this.state.loading && <NewsItem title={e.title?e.title.slice(0, 105):""} desc={e.description?e.description.slice(0, 108):''} imageUrl={e.urlToImage} newsUrl={e.url} 
+                  author={e.author} date={e.publishedAt} source={e.source.name}/>}
             </div>
         })}
         </div>
-        <div className="container d-flex justify-content-between my-3">
+        {!this.state.loading && <div className="container d-flex justify-content-between my-3">
                 <button disabled={this.state.page<=1} type="button" className="btn btn-dark" onClick={this.handlePrev}> &larr; Previous</button>
                 <button disabled={this.state.page>=Math.ceil(this.state.totalResults/this.props.pageSize)} type="button" className="btn btn-dark" onClick={this.handleNext}>Next &rarr;</button>
-        </div>
+        </div>}
         </div>
     )
   }
