@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+ # NewsDaily :
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Overview :
 
-In the project directory, you can run:
+NewsDaily: A ReactJS-based web application that delivers comprehensive news coverage across various categories. Utilize the NewsAPI to fetch real-time news data, employ React Router for seamless navigation between news categories, and implement infinite scrolling to ensure an uninterrupted and enriching news experience.
+--
+application is hosted [HERE!](https://news-daily-pi.vercel.app/)
 
-### `npm start`
+**SCREENSHOTS:**
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img altr="1" src="https://github.com/parin-prog/NewsDaily/blob/main/src/assets/news1.png" height="500">
+<img altr="2" src="https://github.com/parin-prog/NewsDaily/blob/main/src/assets/news2.png" height="500">
+<img altr="3" src="https://github.com/parin-prog/NewsDaily/blob/main/src/assets/news3.png" height="500">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Developed With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [Visual Studio Code](https://code.visualstudio.com/) - A source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring
+* [React](https://react.org/) - A javascript library for building user interfaces
+* [React-router](https://reactrouter.com/)  enables "client side routing".
+* [Bootstrap5](https://getbootstrap.com/)  A powerful, feature-packed frontend toolkit.
+* [Axios](https://www.npmjs.com/package/axios)  Promise based HTTP client for the browser.
+* [Create react app](https://create-react-app.dev/) - A quick method to start developing a react application.
+* [Babel](https://babeljs.io/) - A transpiler for javascript
+* [Webpack](https://webpack.js.org/) - A module bundler
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The following software is required to be installed on your system:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Node 16.x
+* Npm 8.x
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Type the following commands in the terminal to verify your node and npm versions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+node -v
+npm -v
+```
 
-## Learn More
+## How to Run
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone the Repository**: Start by cloning this repository to your local machine.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Setup**:
+   - Navigate to the frontend directory and run `npm install` to install the required frontend dependencies.
+   - Configure the frontend environment variables as necessary.
+   - Run `npm start` to launch the frontend.
 
-### Code Splitting
+4. **Access the Application**:
+   - Visit the application in your web browser at `http://localhost:3000` (by default for the frontend).
+   - Ensure the backend is running on a different port as specified in your configuration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
