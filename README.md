@@ -10,9 +10,9 @@ application is hosted [HERE!](https://news-daily-pi.vercel.app/)
 **SCREENSHOTS:**
 ---
 
-<img altr="1" src="https://github.com/parin-prog/NewsDaily/blob/main/src/assets/news1.png" height="500">
-<img altr="2" src="https://github.com/parin-prog/NewsDaily/blob/main/src/assets/news2.png" height="500">
-<img altr="3" src="https://github.com/parin-prog/NewsDaily/blob/main/src/assets/news3.png" height="500">
+<img altr="1" src="https://github.com/parin-prog/NewsDaily/blob/master/src/assets/news1.png" height="500">
+<img altr="2" src="https://github.com/parin-prog/NewsDaily/blob/master/src/assets/news2.png" height="500">
+<img altr="3" src="https://github.com/parin-prog/NewsDaily/blob/master/src/assets/news3.png" height="500">
 
 ---
 
